@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HOTEL MURAH</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+   <a href="index.html" class="logo">HOTEL MURAH</a>
+   <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="#kontak">Kontak</a>
+      <a href="book.html" class="btn"> Pesan Hotel</a>
+   </nav>
+   <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+
+<section class="reservation" id="reservation">
+   <h1 class="heading"><br><br>Form Pesan Hotel</h1>
+   <form action="book.php" method="post" class="book-form">
+      <div class="container">
+         <div class="box">
+            <p>Nama <span>*</span></p>
+            <input type="text" name="name" class="input" required>
+         </div>
+         <div class="box">
+            <p>Email <span>*</span></p>
+            <input type="email" name="email" class="input" required>
+         </div>
+         <div class="box">
+            <p>Nomor HP <span>*</span></p>
+            <input type="text" name="phone" class="input" required pattern="\d+" title="Hanya boleh angka" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+         </div>
+         <div class="box">
+            <p>Kota <span>*</span></p>
+            <input type="text" name="city" class="input" required>
+         </div>
+         <div class="box">
+            <p>Nama Hotel <span>*</span></p>
+            <input type="text" name="hotel" class="input" required>
+         </div>
+         <div class="box">
+            <p>Kamar <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+               <option value="7">7 rooms</option>
+               <option value="8">8 rooms</option>
+               <option value="9">9 rooms</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Check-in <span>*</span></p>
+            <input type="date" name="checkin" class="input" required>
+         </div>
+         <div class="box">
+            <p>Check-out <span>*</span></p>
+            <input type="date" name="checkout" class="input" required>
+         </div>
+      </div>
+      <input type="submit" value="Book" class="btn">
+   </form>
+</section>
+
+<footer id="kontak">
+   <section class="footer">
+      <div class="box-container">
+         <div class="box">
+            <h3>Contact Info</h3>
+            <a href="tel:+6285166233441"><i class="fas fa-phone"></i> +62851-6623-3441</a>
+            <a href="/cdn-cgi/l/email-protection#f49590999d9ab49c9b809198998186959cda809b84"><i class="fas fa-envelope"></i> <span class="__cf_email__" data-cfemail="7312171e1a1d331b1c07161f1e0601121b5d071c03">[email&#160;protected]</span></a>
+            <a href="#"><i class="fas fa-map"></i> Jakarta, Indonesia</a>
+         </div>
+      </div>
+      <div class="share">
+         <a href="https://wa.me/6285166233441" class="fab fa-whatsapp"></a>
+      </div>
+      <div class="credit">&copy; 2023 by <span>HOTEL MURAH</span></div>
+   </section>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>

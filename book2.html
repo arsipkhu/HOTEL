@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HOTELS MURAH</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- header -->
+   <header class="header">
+      <a href="index.html" class="logo">HOTELS MURAH</a>
+      <nav class="navbar"><a href="index.html">Home</a>
+         <a href="#kontak">Kontak</a>
+         
+         <a href="https://hotelmurah.top" class="btn"> Promo Tiket Pesawat</a>
+         <a href="book.html" class="btn"> Pesan Hotel</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </header>
+   <!-- end header -->
+
+   <!-- form book -->
+   <section class="reservation" id="reservation">
+      <h1 class="heading"><br><br>Form Pesan Hotel</h1>
+      <form action="book.php" method="post" class="book-form">
+         <div class="container">
+            <div class="box">
+               <p>Nama <span>*</span></p>
+               <input type="text" name="name" class="input" placeholder="">
+            </div>
+            <div class="box">
+               <p>Email <span>*</span></p>
+               <input type="text" name="email" class="input" placeholder="">
+            </div>
+              
+            <div class="box">
+               <p>Kota <span>*</span></p>
+               <input type="text" name="city" class="input" placeholder="">
+            </div>
+            <div class="box">
+               <p>Nama Hotel <span>*</span></p>
+               <input type="text" name="hotel" class="input" placeholder="">
+            </div>
+            <div class="box">
+               <p>Kamar <span>*</span></p>
+               <select name="rooms" class="input">
+                  <option value="1">1 room</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                  <option value="6">6 rooms</option>
+                  <option value="7">7 rooms</option>
+                  <option value="8">8 rooms</option>
+                  <option value="9">9 rooms</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Check-in <span>*</span></p>
+               <input type="date" name="checkin" class="input">
+            </div>
+            <div class="box">
+               <p>Check-out <span>*</span></p>
+               <input type="date" name="checkout" class="input">
+            </div>
+         </div>
+         <input type="submit" value="Book" class="btn">
+      </form>
+   </section>
+   <!-- end form book -->
+
+   <!-- footer -->
+   <footer id="kontak">
+      <section class="footer">
+         <div class="box-container">
+            <div class="box">
+               <h3>Contact Info</h3>
+               <a href="tel:+6285183320499"><i class="fas fa-phone"></i> +62851-8332-0499</a>
+               <a href="mailto:admin@hotelmurah.top"><i class="fas fa-envelope"></i> admin@hotelmurah.top</a>
+               <a href="#"><i class="fas fa-map"></i> Jakarta, Indonesia</a>
+            </div>
+         </div>
+         <div class="share">
+            
+            <a href="https://wa.me/6285183320499" class="fab fa-whatsapp"></a>
+         </div>
+         <div class="credit">&copy; 2023 by <span>HOTELS MURAH</span></div>
+      </section>
+   </footer>
+   <!-- end footer -->
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script>
+     document.addEventListener("DOMContentLoaded", function () {
+       const form = document.querySelector(".book-form");
+       form.addEventListener("submit", function (event) {
+         const name = form.querySelector('input[name="name"]').value;
+         const email = form.querySelector('input[name="email"]').value;
+         const city = form.querySelector('input[name="city"]').value;
+         const hotel = form.querySelector('input[name="hotel"]').value;
+         const rooms = form.querySelector('select[name="rooms"]').value;
+         const checkin = form.querySelector('input[name="checkin"]').value;
+         const checkout = form.querySelector('input[name="checkout"]').value;
+
+         if (!name || !email || !city || !hotel || !rooms || !checkin || !checkout) {
+           event.preventDefault(); // Prevent form submission
+           alert("Harap isi semua form");
+         }
+       });
+     });
+   </script>
+   <script src="script.js"></script>
+
+</body>
+</html>

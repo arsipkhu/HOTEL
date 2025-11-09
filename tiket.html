@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Amin Travel</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- header -->
+   <header class="header">
+      <a href="https://www.hotelsmurah.my.id/" class="logo">AMIN TRAVEL</a>
+      <nav class="navbar">
+         <a href="index.html">Home</a>
+         <a href="#kontak">Kontak</a>
+         <a href="https://m.facebook.com/story.php?story_fbid=pfbid0JJBV5Hgh38kRP4XMDAwZxifysT3Rk4UTpq7QP6Dpy9N7f9xhWMnQ4VHsLhyAW8XQl&id=100076363760894&mibextid=Nif5oz">Testimoni</a>
+         <a href="https://amintravel.my.id" class="btn"> Promo Tiket Pesawat</a>
+         <a href="book.html" class="btn"> Pesan Hotel</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </header>
+   <!-- end header -->
+
+   <!-- form book -->
+   <section class="reservation" id="reservation">
+      <h1 class="heading"><br><br>Form Pesan Tiket Pesawat</h1>
+      <form action="tiket.php" method="post" class="book-form">
+         <div class="container">
+            <div class="box">
+               <p>Nama Penumpang <span>*</span></p>
+               <input type="text" name="name" class="input" placeholder="">
+            </div>
+            <div class="box">
+               <p>Email <span>*</span></p>
+               <input type="text" name="email" class="input" placeholder="">
+            </div>
+              
+            <div class="box">
+               <p>Dari <span>*</span></p>
+               <input type="text" name="from" class="input" placeholder="">
+            </div>
+            <div class="box">
+               <p>Ke <span>*</span></p>
+               <input type="text" name="too" class="input" placeholder="">
+            </div>
+            <div class="box">
+               <p>Tanggal Berangkat <span>*</span></p>
+               <input type="date" name="departure" class="input">
+            </div>
+            <div class="box">
+               <p>Tanggal pulang<span>*</span></p>
+               <input type="date" name="arrive" class="input">
+            </div>
+         </div>
+         <input type="submit" value="Book" class="btn">
+      </form>
+   </section>
+   <!-- end form book -->
+
+   <!-- footer -->
+   <footer id="kontak">
+      <section class="footer">
+         <div class="box-container">
+            <div class="box">
+               <h3>Contact Info</h3>
+               <a href="tel:+6287777655020"><i class="fas fa-phone"></i> +62877-7765-5020</a>
+               <a href="mailto:admin@amintravel.my.id"><i class="fas fa-envelope"></i> admin@amintravel.my.id</a>
+               <a href="#"><i class="fas fa-map"></i> Jakarta, Indonesia</a>
+            </div>
+         </div>
+         <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100076363760894&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+            <a href="https://wa.me/6287777655020" class="fab fa-whatsapp"></a>
+         </div>
+         <div class="credit">&copy; 2023 by <span>AMIN TRAVEL</span></div>
+      </section>
+   </footer>
+   <!-- end footer -->
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+
+</body>
+</html>
