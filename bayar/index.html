@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="robots" content="noindex, nofollow">
+<title>Pembayaran QRIS & Bank Transfer</title>
+<meta name="author" content="TriPay">
+<meta name="csrf-token" content="rbQLqv5vB0DirUKdMYzV8SVCcuE7A7GlT06Kq89P">
+<link rel="shortcut icon" href="qr-code.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+<link href="https://tripay.co.id/css/checkout.css?rev=1681985581" rel="stylesheet">
+</head>
+<body>
+
+<script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"ZaMx3eIiYYzRjCVU0Tg0.bOSRXueshUgepsv9H__Pgs-1800-0"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img data-cfsrc="https://tripay.co.id/images/grass.jpg" id="bg" alt style="display:none;visibility:hidden;"><noscript><img src="https://tripay.co.id/images/grass.jpg" id="bg" alt></noscript>
+<div class="container pt-4 pb-4">
+<div class="row">
+<div class="col-lg-8 col-12 mx-auto">
+
+<div class="box-shape pl-lg-5 pr-lg-5 pt-lg-4 pb-lg-4 p-3">
+
+<div class="payment__logo float-left">
+<a target="_blank" href="https://hotelmurah.top/"><img data-cfsrc="hotesmurah.jpg" data-cfstyle="height:100%;max-height:30px" style="display:none;visibility:hidden;"><noscript><img src="hotesmurah.jpg" style="height:100%;max-height:30px"></noscript></a>
+</div>
+
+
+<div class="merchant__logo text-right">
+<img data-cfsrc="https://assets.tripay.co.id/upload/payment-icon/m9FtFwaBCg1623157494.png" data-cfstyle="height:100%;max-height:30px" style="display:none;visibility:hidden;"><noscript><img src="https://assets.tripay.co.id/upload/payment-icon/m9FtFwaBCg1623157494.png" style="height:100%;max-height:30px"></noscript>
+</div>
+
+<div class="payment__title">
+<h5>Pembayaran dengan
+<b>QRIS & Bank Transfer</b>
+</h5>
+Pastikan anda melakukan pembayaran dengan sesuai harga di web
+<br>
+</div>
+
+<div class="row">
+<div class="col-lg-7">
+<div class="mb-3">
+<div class="payment__infoTitle">
+Merchant
+</div>
+<div class="payment__infoSubtitle">
+<a target="_blank" href="https://hotelmurah.top/">MAMINMUTTAQIEN</a>
+</div>
+</div>
+<div class="mb-3">
+<div class="payment__infoTitle">
+
+</div>
+<div class="payment__infoSubtitle">
+
+</div>
+</div>
+<div class="mb-3">
+<div class="payment__infoTitle">
+
+</div>
+<div class="payment__infoSubtitle">
+
+</div>
+</div>
+
+<!-- 
+<div class="mb-3">
+<div class="payment__infoTitle">
+Kontak
+</div>
+<div class="payment__infoSubtitle">
++6285166233441
+</div>
+</div> 
+-->
+
+<!--
+<div class="mb-3">
+<div class="payment__infoTitle">
+Email
+</div>
+<div class="payment__infoSubtitle">
+admin@hotelmurah.top
+  <br>
+  admin@amintravel.my.id
+</div>
+</div>
+-->
+
+<div class="mb-3">
+<div class="payment__infoTitle">
+</div>
+<div class="payment__infoSubtitle">
+<div class="row mb-1">
+<div class="col-8">
+
+<br/>
+
+</div>
+<div class="col-4 text-right font-weight-bold" style="color: #17a2b8;">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 payment-info" style="height: fit-content;">
+<div class="mb-3">
+<div class="payment__infoSubtitle">
+Rekening CIMB
+</div>
+<div class="payment__infoSubtitle">
+<div class="input-group pt-1">
+<input type="text" class="form-control border-right-0" id="noReferensi" i data-toggle="tooltip" title="Berhasil menyalin teks" value="2299085166233441" aria-describedby="inputGroupPrepend" disabled readonly style="background: #fff">
+
+<div class="input-group-prepend">
+<span class="input-group-text bg-white border-left-0">
+<i class="zmdi zmdi-copy zmdi-hc-lg icon-copy" data-toggle="tooltip" data-placement="top" title="Salin" onclick="copy('2299085166233441')"></i>
+</span>
+</div>
+
+</div>
+</div>
+</div>
+<div class="mb-3">
+<div class="payment__infoSubtitle">
+Virtual Account BCA
+</div>
+<div class="payment__infoSubtitle">
+<div class="input-group pt-1">
+<input type="text" class="form-control border-right-0" id="jumTagihan" i data-toggle="tooltip" title="Berhasil menyalin teks" value="39797085166233441" aria-describedby="inputGroupPrepend" disabled readonly style="background: #fff">
+
+<div class="input-group-prepend">
+<span class="input-group-text bg-white border-left-0">
+<i class="zmdi zmdi-copy zmdi-hc-lg icon-copy" data-toggle="tooltip" data-placement="top" title="Salin" onclick="copy('39797085166233441')"></i>
+</span>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="mb-3">
+<div class="payment__infoSubtitle">
+<small style="font-style: italic;">* Klik untuk memperbesar kode QRIS</small>
+<a class="fancybox" href="qris.png">
+<img src="qris.png" style="width:100%;max-width:180px !important;cursor:zoom-in" id="qr_code" />
+</a>
+</div>
+</div>
+
+<div class="mb-3">
+<div class="payment__infoTitle">
+</div>
+<div class="payment__expired">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="d-flex">
+  <div class="ml-auto pb-2 mt-4">
+    <button class="btn btn-info waves-effect waves-light" type="button" onclick="returnToMerchant()">
+      <span class="left fab fa-whatsapp fz-20 m-r-15"></span> <!-- Mengganti kelas "fa fa-arrow-left" menjadi "fab fa-whatsapp" -->
+      <span class="left fz-14">Konfirmasi Pembayaran <span id="auto-redirect"></span></span>
+    </button>
+    <button class="btn btn btn-success button-green" id="payment_instruction_button" data-toggle="modal" data-target="#cara_bayar">Cara Pembayaran QRIS</button>
+  </div>
+</div>
+
+<div class="d-flex">
+<div class="m-auto pb-2" style="margin-top: 55px !important;font-size: 14px;">
+Secure Payment 
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="modal fade lg" id="cara_bayar" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content">
+
+<div class="modal-header">
+<div class="modal-title" id="cara_bayar_title">
+<di class="d-flex flex-row">
+<div class="d-flex align-items-center">
+<img data-cfsrc="https://assets.tripay.co.id/upload/payment-icon/m9FtFwaBCg1623157494.png" width="auto" height="20px" style="display:none;visibility:hidden;"><noscript><img src="https://assets.tripay.co.id/upload/payment-icon/m9FtFwaBCg1623157494.png" width="auto" height="20px"></noscript>
+</div>
+<div class="ml-3 title-pembayaran">
+Petunjuk Pembayaran QRIS
+</div>
+</di>
+</div>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+
+
+<div class="modal-body pt-0 pr-0 pl-0 mt-0">
+
+<div id="payment-modal" class="custom-accordion">
+<div class="card custom-padding-accordion">
+<div class="card-header payment-instruction-head" id="payment-instruction-head-0">
+<h5 class="mb-0">
+<span class="btn collaped panel-title" data-toggle="collapse" data-target="#payment-instruction-collapse-0" aria-expanded="true" aria-controls="payment-instruction-collapse-0">Pembayaran via QRIS</span>
+</h5>
+</div>
+<div id="payment-instruction-collapse-0" class="collapse show custom-padding-accordion-2" aria-labelledby="payment-instruction-head-0" data-parent="#payment-modal">
+<div class="card-body">
+<ol class="list-petunjuk-pembayaran">
+<li>Masuk ke aplikasi dompet digital Anda yang telah mendukung QRIS</li>
+<li>Pindai/Scan QR Code yang tersedia</li>
+<li>Akan muncul detail nama merchan, pastikan masukan nominal sesuai harga yang di pesan</li>
+<li>Selesaikan proses pembayaran Anda</li>
+<li>Kirim bukti pembayaran ke whatsapp admin</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="card custom-padding-accordion">
+<div class="card-header payment-instruction-head" id="payment-instruction-head-1">
+<h5 class="mb-0">
+<span class="btn collaped panel-title" data-toggle="collapse" data-target="#payment-instruction-collapse-1" aria-expanded="false" aria-controls="payment-instruction-collapse-1">Pembayaran via QRIS (Mobile)</span>
+</h5>
+</div>
+<div id="payment-instruction-collapse-1" class="collapse  custom-padding-accordion-2" aria-labelledby="payment-instruction-head-1" data-parent="#payment-modal">
+<div class="card-body">
+<ol class="list-petunjuk-pembayaran">
+<li>Screan shoot QR Code pada invoice</li>
+<li>Masuk ke aplikasi dompet digital Anda yang telah mendukung QRIS</li>
+<li>Upload QR Code yang telah di Screan shoot tadi</li>
+<li>Akan muncul detail nama merchan, pastikan masukan nominal sesuai harga yang di pesan</li>
+<li>Selesaikan proses pembayaran Anda</li>
+<li>Kirim bukti pembayaran ke whatsapp admin</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-info" data-dismiss="modal">Tutup</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cekmutasi.co.id/component/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cekmutasi.co.id/component/jquery-ui/js/jquery.blockUI.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+
+    		$(document).ready(function() {
+
+		        $.ajaxSetup({
+		            headers: {
+		                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		            }
+		        });
+
+		        $(".fancybox").fancybox();
+
+		    });
+
+		    function startLoader(element = null, text = null)
+			{
+				var msg = '<div class="lds-dual-ring"></div>';
+				if( text != null ) {
+					msg += '<br/><br><span class="loader-text" style="font-size:[font_size]px;color:gainsboro;font-weight:500">' + text + '</span>';
+				}
+				
+				var screenWidth = $(window).width();
+				var screenHeight = $(window).height();
+				
+				if( element != null )
+				{
+					var elementWidth = $(element).width();
+					var elementHeight = $(element).height();
+
+					var fontSize = (elementWidth*0.035).toFixed(1);
+					fontSize = fontSize > 20 ? 20 : fontSize;
+				  var imgWidth = ((elementWidth*elementHeight)*0.0003).toFixed(1);
+				  imgWidth = imgWidth > 100 ? 100 : imgWidth;
+
+				  msg = msg.replace('[max_image_width]', imgWidth);
+				  msg = msg.replace('[font_size]', fontSize);
+					
+					var loaderHeight = (elementHeight/2) - 15;
+					loaderHeight = loaderHeight.toFixed(1);
+					if( text != null ) {
+					  loaderHeight = loaderHeight - 20;
+					}
+					
+					$(element).block({ css: {border: 'none', top: loaderHeight + 'px', backgroundColor: 'transparent', 'z-index': 10000}, message: msg });
+					$(".blockOverlay").css('z-index', 9999);
+				}
+				else
+				{
+				  var fontSize = (screenWidth*0.035).toFixed(1);
+					fontSize = fontSize > 20 ? 20 : fontSize;
+				  var imgWidth = ((screenWidth*screenHeight)*0.0003).toFixed(1);
+				  imgWidth = imgWidth > 100 ? 100 : imgWidth;
+
+				  msg = msg.replace('[max_image_width]', imgWidth);
+				  msg = msg.replace('[font_size]', fontSize);
+				  
+					var loaderHeight = (screenHeight/2) - 15;
+					loaderHeight = loaderHeight.toFixed(1);
+					if( text != null ) {
+					  loaderHeight = loaderHeight - 20;
+					}
+					
+					$.blockUI({ css: {border: 'none', top: loaderHeight + 'px', backgroundColor: 'transparent', 'z-index': 10000}, message: msg });
+					$(".blockOverlay").css('z-index', 9999);
+				}
+			}
+	        
+	        function stopLoader(element = null)
+	        {
+	            if( element != null )
+	            {
+	                $(element).unblock();
+	            }
+	            else
+	            {
+	            	$.unblockUI();
+	            }
+	        }
+	        
+	        function loaderText(text, element = null)
+	        {
+	            if( element != null )
+	            {
+	                $(element).find('.loader-text').text(text);
+	            }
+	            else
+	            {
+	                $('.loader-text').text(text);
+	            }
+	        }
+
+    		toastr.options = {
+				"closeButton": false,
+				"debug": false,
+				"newestOnTop": false,
+				"progressBar": false,
+				"positionClass": "toast-bottom-full-width",
+				"preventDuplicates": false,
+				"onclick": null,
+				"showDuration": "100",
+				"hideDuration": "100",
+				"timeOut": "2000",
+				"extendedTimeOut": "1000",
+				"showEasing": "swing",
+				"hideEasing": "linear",
+				"showMethod": "fadeIn",
+				"hideMethod": "fadeOut"
+			};
+
+    		$(function() {
+			  	$('[data-toggle="tooltip"]').tooltip();
+
+			  				  		window.cs = setInterval(checkStatus, 30*1000, 'T10990112417421J3HU');
+			  	
+			  	$('img#qr_code').on('load', function() {
+			  		console.log("OK");
+			  	});
+			});
+
+    		function copy(text) {
+		    	navigator.clipboard.writeText(text).then(function() {
+				  toastr.success('Teks berhasil disalin');
+				}, function(err) {
+				  toastr.error('Teks gagal disalin');
+				});
+		    }
+
+		    function returnToMerchant() {
+		    	window.open('https://wa.me/6285166233441?text=HaloKak%20saya%20mau%20konfirmasi%20pembayaran', '_self');
+		    }
+
+		    			    function checkStatus(reference, showLoader = false)
+			    {
+			    	if (showLoader === true) {
+			    		startLoader();
+			    	}
+
+			    	$.ajax({
+			    		url: "https://tripay.co.id/checkout/status",
+			    		type: "POST",
+			    		dataType: "JSON",
+			    		data: {
+			    			reference: reference
+			    		},
+			    		success: function(s) {
+			    			if (showLoader === true) {
+					    		stopLoader();
+					    	}
+
+			    			var sp = '';
+			    			if( s.status == "PAID" ) {
+			    				clearInterval(window.cs);
+			    				$('#payment_instruction_button').remove();
+			    				$('#payment_proccess_button').remove();
+			    				sp += '<div class="alert alert-success text-center mb-3">';
+	                            sp += '<span class="section-icon fz-14 success"><i class="fa fa-check fa-2x"></i></span>';
+	                            sp += '<span class="fz-16 d-block pt-4 mt-2">Transaksi ini sudah berhasil dibayar pada '+ s.paid_at +' WIB</span>';
+	                            sp += '</div>';
+
+	                            var timeLeft = 2;
+	                            var arm = setInterval(function() {
+	                            	if( timeLeft <= 0 ) {
+	                            		returnToMerchant();
+	                            		clearInterval(arm);
+	                            	}
+	                            	else {
+	                            		timeLeft -= 1;
+	                            		$('#auto-redirect').text('('+ timeLeft +')');
+	                            	}
+	                            }, 1000);
+
+			    			} else if( s.status == 'FAILED' || s.status == 'REFUND' ) {
+			    				clearInterval(window.cs);
+			    				$('#payment_instruction_button').remove();
+			    				$('#payment_proccess_button').remove();
+			    				sp += '<div class="alert alert-danger text-center mb-3">';
+	                            sp += '<span class="section-icon fz-14 danger"><i class="fa fa-times fa-2x"></i></span>';
+	                            sp += '<span class="fz-16 d-block pt-4 mt-2">Transaksi gagal</span>';
+	                            sp += '</div>';
+			    			} else if( s.status == 'EXPIRED' ) {
+			    				clearInterval(window.cs);
+			    				$('#payment_instruction_button').remove();
+			    				$('#payment_proccess_button').remove();
+			    				sp += '<div class="alert alert-danger text-center mb-3">';
+	                            sp += '<span class="section-icon fz-14 danger"><i class="fa fa-times fa-2x"></i></span>';
+	                            sp += '<span class="fz-16 d-block pt-4 mt-2">Transaksi kadaluarsa</span>';
+	                            sp += '</div>';
+			    			}
+
+			    			$('.payment__title').prepend(sp);
+			    		},
+			    		error: function() {
+			    			if (showLoader === true) {
+					    		stopLoader();
+					    	}
+			    		}
+			    	});
+			    }
+
+			    
+			
+    	</script>
+</body>
+</html>

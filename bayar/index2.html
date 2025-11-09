@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/app/css/style.css">
+    <link rel="stylesheet" href="assets/app/css/main.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/3b4957157c.js" crossorigin="anonymous"></script> -->
+
+    <title>pembayaran</title>
+</head>
+<body>
+
+
+    <div class="wrap py-3">
+        <div class="container-lg">
+            <div class="d-flex justify-content-between mb-2">
+                <h2>
+                    <br>Pembayaran
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7">
+
+                    <div class="jumbotron py-3 mb-3 bg-blue-dark text-center shadow-sm">
+                        <h6 class="text-light">VIRTUAL AKUN BCA</h6>
+                        <h1 class="text-monospace text-yellow">39797083139110447
+                        <p>VIRGO M AMIN MUTTAQIEN</P> </h1>
+                    </div>
+                    
+                                <div class="row">
+                <div class="col-md-7">
+
+                    <div class="jumbotron py-3 mb-3 bg-blue-dark text-center shadow-sm">
+                        <h6 class="text-light">REKENING CIMB NIAGA</h6>
+                        <h1 class="text-monospace text-yellow">2299083139110447
+                        <p>VIRGO M AMIN MUTTAQIEN</P> </h1>
+                    </div>
+
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p class="lead text-center">
+                                Batas Waktu Pembayaran <br>
+                                <span class="text-danger" id="limit"></span> <br>
+                                <small>Segera lakukan pembayaran sebelum waktu habis.</small>
+                            </p>
+
+                            <h1 class="text-center mb-5" id="clock"></h1>
+
+                            <p class="mb-0">
+                                *)TRANSFER SESUAI TOTAL HARGA YANG DI PESAN
+                            </p>
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+    var limit = new Date().toLocaleString("en-US", {timeZone: "Asia/Jakarta"}).slice(0,10).replace(/\//g,'-') + " 23:59:59";
+    // Set the date we're counting down to
+    var countDownDate = new Date(limit).getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        hours = (hours < 10) ? '0' + hours : hours;
+        document.getElementById("limit").innerHTML = limit;
+        document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("clock").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+    </script>
+    
+             <a href="https://wa.me/6287777655020?text=HaloKak%20saya%20mau%20konfirmasi%20pembayaran" class="btn"> Konfirmasi Pembayaran</a>
+
+</body>
+</html>
